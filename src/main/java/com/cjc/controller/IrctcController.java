@@ -21,7 +21,7 @@ public class IrctcController {
 
 	@PostMapping(value = "/bookTicket", consumes = { "application/xml", "application/json" })
 	public ResponseEntity<String> bookTicket(@RequestBody PassengerRequest request) {
-
+         Integer i = 20;
 		String pnr = service.bookTicket(request);
 
 		String msg = "Ticket Book is Completed :: " + pnr;
